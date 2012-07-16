@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9B7C5D5315B468EC001A1ECD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7C5D5215B468EC001A1ECD /* main.cpp */; };
-		9B7C5D5515B468EC001A1ECD /* puzzle.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9B7C5D5415B468EC001A1ECD /* puzzle.1 */; };
+		9B7C5D6515B469A4001A1ECD /* puzzle.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9B7C5D6415B469A4001A1ECD /* puzzle.cc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,7 +17,6 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				9B7C5D5515B468EC001A1ECD /* puzzle.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -26,8 +24,8 @@
 
 /* Begin PBXFileReference section */
 		9B7C5D4E15B468EC001A1ECD /* puzzle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = puzzle; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B7C5D5215B468EC001A1ECD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		9B7C5D5415B468EC001A1ECD /* puzzle.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = puzzle.1; sourceTree = "<group>"; };
+		9B7C5D6415B469A4001A1ECD /* puzzle.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = puzzle.cc; sourceTree = "<group>"; };
+		9B7C5D6715B47209001A1ECD /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +58,8 @@
 		9B7C5D5115B468EC001A1ECD /* puzzle */ = {
 			isa = PBXGroup;
 			children = (
-				9B7C5D5215B468EC001A1ECD /* main.cpp */,
-				9B7C5D5415B468EC001A1ECD /* puzzle.1 */,
+				9B7C5D6715B47209001A1ECD /* Makefile */,
+				9B7C5D6415B469A4001A1ECD /* puzzle.cc */,
 			);
 			path = puzzle;
 			sourceTree = "<group>";
@@ -116,7 +114,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B7C5D5315B468EC001A1ECD /* main.cpp in Sources */,
+				9B7C5D6515B469A4001A1ECD /* puzzle.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,14 +171,26 @@
 		9B7C5D5915B468EC001A1ECD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				HEADER_SEARCH_PATHS = /Users/lee/Downloads/src/boost_1_50_0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
 		};
 		9B7C5D5A15B468EC001A1ECD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				HEADER_SEARCH_PATHS = /Users/lee/Downloads/src/boost_1_50_0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
@@ -203,6 +213,7 @@
 				9B7C5D5A15B468EC001A1ECD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
