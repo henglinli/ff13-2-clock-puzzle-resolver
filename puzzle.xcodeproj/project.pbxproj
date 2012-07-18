@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9B00FDC115B6603200326AE1 /* readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme; sourceTree = "<group>"; };
 		9B7C5D4E15B468EC001A1ECD /* puzzle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = puzzle; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B7C5D6415B469A4001A1ECD /* puzzle.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = puzzle.cc; sourceTree = "<group>"; };
 		9B7C5D6715B47209001A1ECD /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
@@ -42,6 +43,7 @@
 		9B7C5D4315B468EB001A1ECD = {
 			isa = PBXGroup;
 			children = (
+				9B00FDC115B6603200326AE1 /* readme */,
 				9B7C5D5115B468EC001A1ECD /* puzzle */,
 				9B7C5D4F15B468EC001A1ECD /* Products */,
 			);
